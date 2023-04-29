@@ -148,7 +148,8 @@ for i in xt:
         print(rows)
 
 
-        with open(f"C:/Users/HP/OneDrive/Desktop/Completed Projects/LinkedIn_daily_data/LinkedIn {date.today()}.csv",'a+',encoding='UTF8' ,newline='') as f:
+        with open(f"data/LinkedIn {date.today()}.csv", 'a+', encoding='UTF8', newline='') as f:
+
             writer = csv.writer(f)     
             writer.writerow(rows)
     except:
